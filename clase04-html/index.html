@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./iconito.ico">
+    <title>Mi Formulario</title>
+</head>
+
+<body>
+
+    <form action="datos.html" method="get" id="formulario1">
+
+        <label>Nombre:
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" >
+        </label>
+        <br>
+        <hr>
+
+        <label>Apellido:
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+        </label>
+        <br>
+        <hr>
+
+
+        <label>Edad:
+            <input type="number" id="edad" name="edad" placeholder="Edad" min="1" max="99" value="10">
+        </label>
+        <br>
+        <hr>
+
+        <label>Email:
+            <input type="email" id="mail" name="mail" placeholder="Mail">
+        </label>
+        <br>
+        <hr>
+
+        <label>Telefono:
+            <input type="tel" id="telefono" name="telefono" placeholder="Telefono"
+                pattern="[54911]{5}-[0-9]{3}-[0-9]{3}">
+        </label>
+        <br>
+        <hr>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <label>
+                <input type="radio" id="sexo" name="sexo" value="hombre">Soy Hombre
+                <input type="radio" id="sexo" name="sexo" value="mujer">Soy Mujer
+                <input type="radio" id="sexo" name="sexo" value="nb">Soy nb
+            </label>
+        </fieldset>
+        <br>
+        <hr>
+
+        <fieldset>
+            <legend>Intereses</legend>
+            <label>
+                <input type="checkbox" id="intereses" name="intereses" value="programacion">Programacion
+                <input type="checkbox" id="intereses" name="intereses" value="diseño" checked>Diseño
+                <input type="checkbox" id="intereses" name="intereses" value="videojuegos" disabled>Videojuegos
+                <input type="checkbox" id="intereses" name="intereses" value="fotografia">Fotografia
+            </label>
+        </fieldset>
+
+        <br>
+        <hr>
+        <label>Mensaje
+            <textarea name="mensaje" id="mensaje" cols="40" rows="20" placeholder="Mensaje"></textarea>
+        </label>
+
+        <br>
+        <hr>
+        <label>Pais
+            <select name="pais" id="pais">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia" selected>Colombia</option>
+            </select>
+
+        </label>
+
+        <label>Color
+            <input type="color" id="color" name="color">
+        </label>
+
+        <br>
+
+        <label>file
+            <input type="file" id="file" name="file">
+
+        </label>
+
+        <br>
+        <label>range
+            <input type="range" id="range" name="range" min="0" max="100" step="1">
+        </label>
+        <button type="reset">Reset</button>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+
+</body>
+
+</html>
